@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link href="https://fonts.googleapis.com/css2?family=IM+Fell+English+SC&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <title>todoApp</title>
+</head>
+<body>
+    <div class="wrapper">
+        <div class="container">
+            <div class="app">
+                <h2 class="title">TODO APP</h2>
+                <header class="header-todo">
+                    <div class="create_todo">
+                        <p id="date-time"></p>
+                        <div><i class="fas fa-plus-circle"></i></div>
+                    </div>
+                    <div class="task-info">
+                        <ul class="tasks-new">
+                            <li class="num-task">0</li>
+                            <li class="type-tasks">tasks Active</li>
+                        </ul>
+                        <ul class="tasks-complete">
+                            <li class="num-task">0</li>
+                            <li class="type-tasks">tasks Complete</li>
+                        </ul>
+                    </div>
+                </header>
+                <main class="boby-todo">
+                    <ul class="list-tasks" id="l" data-check="f">
+                        
+                    </ul>
+                </main>
+                <footer class="footer-todo">
+                    <p>show</p>
+                    <button type="button" class="btn-action active btn-stask-all">All</button>
+                    <button type="button" class="btn-action btn-stask-active">Active</button>
+                    <button type="button" class="btn-action btn-stask-complete">Complete</button>
+                </footer>
+            </div>
+        </div>
+        <div class="box_up_Create">
+            <div  class="inputField" >
+                <input  class="txt-todo" type="text" placeholder="Add your new todo">
+                <button class="btn-add-todo btn-action">Add task</button>
+                <button class="btn-edit btn-action">Edit</button>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="./jquery-3.6.0.min.js"></script>
+<script src="./todo.js"></script>
+</html>

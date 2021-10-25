@@ -1,0 +1,197 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+li{
+    list-style: none;
+}
+.wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #35d388;
+    font-family: 'Roboto', sans-serif;
+    flex-direction: column;
+    height: 100vh;
+}
+.container{
+    width: 270px;
+    background-color: white;
+    border-radius: 40px;
+    padding: 10px 10px;
+}
+.container .app {
+    padding: 10px 15px;
+    background-color:#f8f8fd;
+    border-radius: 30px;
+    height: 500px;
+    position: relative;
+}
+.title {
+    text-align: center;
+    color: black;
+    font-family:'IM Fell English SC', serif;
+}
+.create_todo,
+.task-info,
+.task,
+.inputField {
+    display:flex;
+    justify-content: space-between; 
+}
+.create_todo i {
+    font-size: 35px;
+    color: #37ab3c;
+    transition: all 0.5s ease;
+    box-sizing: border-box
+}
+.create_todo {
+    height: 30px;
+}
+.create_todo i:hover {
+    font-size: 30px;
+    cursor: pointer;
+    color: #319236;
+    overflow: hidden;
+}
+.task-info {
+    margin: 30px 0px;   
+}
+.task-info .num-task {
+    font-size: 14px;
+    font-weight: bold;
+}
+.task-info .type-tasks {
+    font-size: 13px;
+    color:#c0c2c9 ;
+}
+.inputField {
+    background-color: white;
+    padding: 40px;
+    width: 300px;
+    margin: 0 auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+.txt-todo {
+    padding: 10px 10px;
+    border: 1px solid #5966d6;
+    border-radius: 10px;
+    outline: none;
+    width: 65%;
+}
+.btn-add-todo,
+.btn-edit {
+    border-radius: 10px!important;
+    margin-left: 0px!important;
+    padding: 20px 10px;
+}
+.list-tasks .task .far {
+    color:#c0c2c9 ;
+    font-size: 22px;
+    font-weight: lighter; 
+    transition: all 0.2s ease; 
+    cursor: pointer;
+}
+.btn-complete_stack {
+    display: flex!important;
+    justify-content: center!important;
+    align-items: center;
+    /* background-color:#a6a7a8 ; */
+    background-color: transparent;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+}
+.task {
+    margin-bottom: 15px;
+    cursor: pointer;
+    transition:  all 0.5s ease;
+}
+.task p {
+    width: 160px;
+    overflow: hidden;
+}
+.list-tasks .task .far:hover{
+    font-size: 16px;
+}
+.action {
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.3s ease; 
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition:all 0.3s ease;
+}
+.action:hover,
+.btn-complete_stack:hover
+{
+    background-color: #dddada;
+    cursor: pointer;  
+}
+
+.fa-edit:hover,
+.fa-trash-alt:hover {
+    font-size: 10px;
+    transition: all 0.3s ease;
+    color: #1f1e1e!important;
+}
+.footer-todo {
+    position: absolute;
+    bottom: 20px;
+    display: flex;
+    align-items: center;
+}
+.btn-action {
+    color: #fff;
+    margin-left: 15px;
+    padding: 5px 8px;
+    border-radius: 15px;
+    background-color: #4caf50;
+    border: none;
+    outline: none;
+    transition: all 0.3s ease;
+}
+.btn-action:hover {
+    cursor: pointer;
+    background-color:#37ab3c ;
+}
+.list-tasks-complete {
+    display: none;
+}
+.list-tasks-complete .far {
+    color: #4caf50!important;
+}
+.box_up_Create {
+    display: none;
+    width: 100%;
+    height: 100vh;
+    background-color:rgba(0,0,0,0.5);
+    z-index: 100;
+    position: absolute;
+    top: 0px;
+}
+.fa-check-circle {
+    color: #4caf50!important;
+}
+.active {
+    opacity: 0.4;
+}
+.btn-edit {
+    display: none;
+}
+.task p {
+    font-size: 13px;
+    font-weight: bold;
+    font-family: 'Nunito', sans-serif;
+}
+.value-stask-complete {
+    text-decoration: line-through;
+    color: #c0c2c9;
+}
+
